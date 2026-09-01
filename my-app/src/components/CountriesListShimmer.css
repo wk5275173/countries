@@ -1,0 +1,9 @@
+/* .shimmer-card {                                  //due to specificity
+    height: 350px;
+    background-color: #ccc;
+} */                                                   
+
+.country-card.shimmer-card {
+    height: 350px;
+    background-color: #ccc;
+}
