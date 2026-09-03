@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function SearchBar({setQuery}) {    //Passes setQuery as prop//or here we destructure it //setQuery(e.target.value)  ← Updates state in App // App re-renders with new query
+export default function SearchBar({setQuery}) {  // Receives setQuery as a prop //Passes setQuery as prop//or here we destructure it //setQuery(e.target.value)  ← Updates state in App // App re-renders with new query
   return (
      <div className="search-container">
           <i className="fa-solid fa-magnifying-glass"></i>
