@@ -144,8 +144,8 @@ if(!countriesData.length) {
     <>
     <div className="countries-container">{
    countriesData.filter(country => country.flag?.url_svg && country.capitals?.[0]?.name)
-   .filter((country) => country.names.common.toLowerCase().includes(query) || country.region.toLowerCase().includes(query))
-   .map((country) =>{
+   .filter((country) => country.names.common.toLowerCase().includes(query) || country.region.toLowerCase().includes(query)) //Filters countries based on whether the search query matches the country name OR region
+   .map((country) =>{                   //Yes, .map() is iterating over each filtered country and returning a CountryCard component for each one.
     return (
       <CountryCard
       key={country.names.common}
