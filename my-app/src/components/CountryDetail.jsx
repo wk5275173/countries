@@ -451,7 +451,7 @@ export default function CountryDetail() {     //both work     //any varaible nam
     if(!data.data.objects[0].borders) {
      data.data.objects[0] = []
     }
-    data.data.objects[0].borders.map((border) => {
+    data.data.objects[0].borders.map((border) => {                            //map return those number of borders which the api can return
       fetch(`https://api.restcountries.com/countries/v5/codes.alpha_3/${border}?pretty=1&api-key=rc_live_605ebf66a6544395a253e2d4832952c5`)
       .then((res) => res.json())
       .then((borderData) => {
