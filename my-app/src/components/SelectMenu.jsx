@@ -14,7 +14,7 @@
 // }
 
 
-export default function SelectMenu({setQuery}) {   //Passes setQuery as prop//or here we destructure it //setQuery(e.target.value)  ← Updates state in App // App re-renders with new query
+export default function SelectMenu({setQuery}) {   //Receives setQuery as a prop//or here we destructure it //setQuery(e.target.value)  ← Updates state in App // App re-renders with new query
   return (
     <select className="filter-by-region" onChange={(e) => setQuery(e.target.value.toLowerCase())}>
           <option hidden>Filter by Region</option>
