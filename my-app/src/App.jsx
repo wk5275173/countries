@@ -358,10 +358,10 @@ const App = () =>{
         <main>
         <Routes>
          {/* <Route path="/" element={<h1>Welcome to Countries App</h1>} />  */}
-         <Route path="/" element={
+         <Route path="/" element={                        // setQuery is passed as a prop
         <>
         <div className="search-filter-container">
-        <SearchBar setQuery={setQuery}/>
+        <SearchBar setQuery={setQuery}/>                
         <SelectMenu setQuery={setQuery}/>
         </div>
         {
