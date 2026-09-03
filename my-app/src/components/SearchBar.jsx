@@ -4,7 +4,7 @@ export default function SearchBar({setQuery}) {    //Passes setQuery as prop//or
   return (
      <div className="search-container">
           <i className="fa-solid fa-magnifying-glass"></i>
-          <input onChange={(e) => setQuery(e.target.value.toLowerCase())} type="text" placeholder="Search for a country..."/>
+          <input onChange={(e) => setQuery(e.target.value.toLowerCase())} type="text" placeholder="Search for a country..."/>    // Call setQuery to update state in App    
         </div>
   )
 }
