@@ -37,7 +37,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-export default function CountryCard({name, flag, population, region, capital, data}) {  //Where to navigate to= and //What data to pass state
+export default function CountryCard({name, flag, population, region, capital, data}) {  //Where to navigate to= and //What data to pass state  ( If name = "Germany" → to="/Germany") //User clicks Germany card,Link navigates to "/Germany",Route matches path="/:country",:country = "Germany",CountryDetail renders,useParams() → { country: "Germany" },Fetches data for Germany
   return (
     <Link className="country-card" to={`/${name}`} state={data}>          
         <img src={flag} alt={`${name} flag`} />
