@@ -422,11 +422,12 @@ import { useTheme } from '../hooks/useTheme';
 
 export default function CountryDetail() {     //both work     //any varaible name
   const [darkMode] = useTheme()
-  const params = useParams()                               //Gets URL parameters (e.g., /canada → {country: "canada"}) //If URL is /canada, params.country = "canada"
+  const params = useParams()     //Gets URL parameters. e.g /canada 
+ // console.log(params)            //{country: "canada"}            
   const location = useLocation()                           //Gets current URL location object
   // console.log(location)
   console.log(location.state)                              //Check if data was passed via state
-  const countryName = params.country
+  const countryName = params.country              //If URL is /canada, params.country = "canada"
   
   
 
