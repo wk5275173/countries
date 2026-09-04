@@ -366,7 +366,7 @@ const App = () =>{
         </div>
         {                                                      //Prop Name(setQuery={setQuery}) before the curley braces //(Can be ANYTHING!) e.g <SelectMenu updateQuery={setQuery}/>, <SelectMenu whatever={setQuery}/> but at the right side of = in curely braces //MUST BE THE SETTER FROM useState //In child component: Must match the prop name (left side) // for example <SelectMenu updateQuery={setQuery}/> // Prop name is "updateQuery" //<SelectMenu updateQuery={setQuery}/> //Must match "updateQuery" //return (  <select onChange={(e) => updateQuery(e.target.value)}> //Called as updateQuery//
         query === 'unmount'? '' :<CountriesList query={query}/>
-        }
+        }                                                          
         </>
         }/>                                                      
         <Route path="/:country" element={<CountryDetail/>}/>     
@@ -375,5 +375,5 @@ const App = () =>{
         </main>
         </ThemeProvider>
     )                                                           
-}                                           
+}                                                             //Dynamic URL parameter(path="/:country") e.g /Germany, /France, /Japan (The route matches: path="/:country", :country = "Germany", CountryDetail component renders)
 export default App
